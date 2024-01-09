@@ -1,5 +1,9 @@
-import { Profile } from "./Profile/Profile";
+import { Profile } from "components/Profile/Profile";
+import { Statistics } from "components/Statistics/Statistics";
+
 import user from '../db/user.json'
+import data from '../db/data.json'
+
 
 export const App = () => {
   return (
@@ -13,13 +17,15 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Profile
+      {/* <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      />
+      /> */}
+
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
