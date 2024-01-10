@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { TransactionHistoryRow } from "components/TransactionHistory/TransactionHistoryRow/TransactionHistoryRow"
+import { TransactionHistoryRow } from "components/TransactionHistoryRow/TransactionHistoryRow"
 
 export const TransactionHistory = ({items}) => {
     return (
