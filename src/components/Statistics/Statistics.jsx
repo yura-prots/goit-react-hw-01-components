@@ -1,29 +1,38 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import css from './Statistics.module.css'
+import {
+  Wrapper,
+  Title,
+  List,
+  Item,
+  ItemLabel,
+  ItemPercentage,
+} from './Statistics.styled';
 
+export const Statistics = ({ title, stats }) => {
+  return (
+    <Wrapper>
+      <Title>{title}</Title>
 
-export const Statistics = ({title, stats}) => {
-    return (
-    <section className={css.statistics}>
-        <h2 className={css.title}>{title}</h2>
-        
-        <ul className={css.stats}>
-            {stats.map(({id, label, percentage}) => (
-                <li className={css.stats__item} key={id}>
-                    <span className={css.stats__label}>{label}</span>
-                    <span className={css.stats__percentage}>{percentage}%</span>
-                </li>
-            ))}    
-        </ul>
-    </section>
-  )}
+      <List>
+        {stats.map(({ id, label, percentage }) => (
+          <Item key={id}>
+            <ItemLabel>{label}</ItemLabel>
+            <ItemPercentage>{percentage}%</ItemPercentage>
+          </Item>
+        ))}
+      </List>
+    </Wrapper>
+  );
+};
 
-  Statistics.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.arrayOf(PropTypes.exact({
-        id: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        percentage: PropTypes.number.isRequired
-    }))
-  }
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
