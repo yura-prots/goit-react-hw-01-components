@@ -30,6 +30,9 @@ export const Item = styled.li`
   justify-items: center;
 
   padding: 6px;
+
+  background-color: ${p => p.randomColor};
+
   :first-of-type {
     border-radius: 12px 0 0 12px;
   }

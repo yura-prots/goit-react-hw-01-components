@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { getRandomColor } from 'utils/getRandomColor';
 
 import {
   Wrapper,
@@ -16,7 +17,7 @@ export const Statistics = ({ title, stats }) => {
 
       <List>
         {stats.map(({ id, label, percentage }) => (
-          <Item key={id}>
+          <Item key={id} randomColor={getRandomColor()}>
             <ItemLabel>{label}</ItemLabel>
             <ItemPercentage>{percentage}%</ItemPercentage>
           </Item>
