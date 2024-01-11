@@ -1,4 +1,6 @@
-.transactions {
+import styled from '@emotion/styled';
+
+export const Table = styled.table`
   overflow: hidden;
   text-transform: capitalize;
 
@@ -16,11 +18,11 @@
     width: 300px;
     margin: auto;
   }
-}
+`;
 
-.transactions__head {
+export const TableHead = styled.thead`
   font-size: 16px;
   line-height: 1.18;
 
   background-color: #13d4b4;
-}
+`;
