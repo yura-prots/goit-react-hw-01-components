@@ -1,8 +1,10 @@
-.item {
-  position: relative;
-}
+import styled from '@emotion/styled';
 
-.status {
+export const Item = styled.li`
+  position: relative;
+`;
+
+export const FriendStatus = styled.span`
   position: absolute;
   right: 0;
   bottom: 20px;
@@ -12,12 +14,9 @@
   width: 12px;
   height: 12px;
   background-color: green;
-}
+`;
 
-.avatar {
-}
-
-.name {
+export const FriendName = styled.p`
   margin-top: 0;
   margin-bottom: 6px;
-}
+`;
