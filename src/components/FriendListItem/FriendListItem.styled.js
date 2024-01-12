@@ -13,7 +13,7 @@ export const FriendStatus = styled.span`
   border-radius: 50%;
   width: 12px;
   height: 12px;
-  background-color: green;
+  background-color: ${p => (p.status ? 'green' : 'red')};
 `;
 
 export const FriendName = styled.p`
