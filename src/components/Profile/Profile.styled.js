@@ -36,12 +36,11 @@ export const Img = styled.img`
   max-height: 92px;
   border-radius: 50%;
   background: #d9d9d9;
-  // border: 6px solid #ffffff;
 `;
 
 export const Name = styled.p`
   font-weight: 700;
-  line-height: 1.187;
+  line-height: 1.2;
 
   margin-top: 49px;
   margin-bottom: 0;

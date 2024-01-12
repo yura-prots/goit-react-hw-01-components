@@ -31,10 +31,10 @@ export const Table = styled.table`
     border-bottom: none;
   }
 
-  & td:hover,
-  & td:hover ~ td {
-    background-color: lightyellow;
-  }
+  // & td:hover,
+  // & td:hover ~ td {
+  //   background-color: lightyellow;
+  // }
 
   // overflow: hidden;
   // text-transform: capitalize;
