@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { getRandomColor } from 'utils/getRandomColor';
 
 import {
-  Wrapper,
+  Container,
   Title,
   List,
   Item,
@@ -12,7 +12,7 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Wrapper>
+    <Container>
       <Title>{title}</Title>
 
       <List>
@@ -23,7 +23,7 @@ export const Statistics = ({ title, stats }) => {
           </Item>
         ))}
       </List>
-    </Wrapper>
+    </Container>
   );
 };
 

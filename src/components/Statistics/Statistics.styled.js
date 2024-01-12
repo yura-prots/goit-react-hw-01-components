@@ -1,14 +1,15 @@
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.section`
-  margin: 24px auto;
-  padding: 12px;
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  background: rgba(142, 227, 212, 0.22);
+  margin: auto;
+  margin-top: 50px;
+  width: min-content;
+
   border-radius: 18px;
-  @media screen and (max-width: 768px) {
-    width: fit-content;
-  }
 `;
 
 export const Title = styled.h2`
@@ -26,8 +27,9 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   padding: 6px;
 

@@ -17,7 +17,7 @@ export const Container = styled.div`
   border-radius: 18px;
 `;
 
-export const ProfileCard = styled.div`
+export const Card = styled.div`
   position: relative;
   text-align: center;
 
@@ -29,17 +29,17 @@ export const ProfileCard = styled.div`
   box-shadow: 0px 10px 30px rgba(89, 213, 189, 0.45);
 `;
 
-export const ProfileImg = styled.img`
+export const Img = styled.img`
   position: absolute;
   transform: translate(-50px, -60px);
 
   max-height: 92px;
   border-radius: 50%;
   background: #d9d9d9;
-  border: 6px solid #ffffff;
+  // border: 6px solid #ffffff;
 `;
 
-export const ProfileName = styled.p`
+export const Name = styled.p`
   font-weight: 700;
   line-height: 1.187;
 
@@ -48,7 +48,7 @@ export const ProfileName = styled.p`
   color: #000000;
 `;
 
-export const ProfileTag = styled.p`
+export const Tag = styled.p`
   font-size: 12px;
 
   margin-top: 6px;
@@ -56,7 +56,7 @@ export const ProfileTag = styled.p`
   color: #969696;
 `;
 
-export const ProfileLocation = styled.p`
+export const Location = styled.p`
   font-weight: 700;
   font-size: 12px;
 
@@ -65,14 +65,14 @@ export const ProfileLocation = styled.p`
   color: #000000;
 `;
 
-export const StatsList = styled.ul`
+export const List = styled.ul`
   list-style: none;
   display: flex;
   padding: 12px;
   margin: 0;
 `;
 
-export const StatsItem = styled.li`
+export const Item = styled.li`
   display: grid;
   width: 80px;
   justify-items: center;
@@ -84,7 +84,7 @@ export const StatsItem = styled.li`
   }
 `;
 
-export const StatsLabel = styled.span`
+export const Label = styled.span`
   font-weight: 400;
   font-size: 12px;
 
@@ -92,7 +92,7 @@ export const StatsLabel = styled.span`
   color: #999999;
 `;
 
-export const StatsQuantity = styled.span`
+export const Quantity = styled.span`
   font-weight: 700;
   font-size: 24px;
 
