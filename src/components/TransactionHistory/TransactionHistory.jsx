@@ -12,11 +12,11 @@ export const TransactionHistory = ({ items }) => {
   return (
     <Table>
       <TableHead>
-        <tr>
+        <TableRow>
           <TableHeadCell>Type</TableHeadCell>
           <TableHeadCell>Amount</TableHeadCell>
           <TableHeadCell>Currency</TableHeadCell>
-        </tr>
+        </TableRow>
       </TableHead>
 
       <tbody>
