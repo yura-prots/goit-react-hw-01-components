@@ -5,7 +5,7 @@ import { Item, Status, Name } from './FriendListItem.styled';
 export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
     <Item>
-      <Status status={isOnline}>{isOnline}</Status>
+      <Status status={isOnline} />
       <img src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>
